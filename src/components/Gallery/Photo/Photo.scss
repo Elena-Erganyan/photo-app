@@ -1,0 +1,16 @@
+.gallery__item {
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.gallery__photo {
+    width: 280px;
+    height: 171px;
+}
+
+@media (min-width: 530px){
+    .gallery__photo {
+        width: 229px;
+        height: 142px;
+    }
+}

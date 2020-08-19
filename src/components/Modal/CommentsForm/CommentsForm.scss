@@ -1,0 +1,50 @@
+@import "../../../variables.scss";
+
+
+.commentsForm {
+    padding: 15px 22px;
+    
+    &__name,
+    &__comment{
+        padding: 3px;
+    }
+
+    &__name,
+    &__comment,
+    &__btn {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+    }
+
+    &__name,
+    &__comment{
+        margin-bottom: 20px;
+    }
+
+    &__btn {
+        width: 100%;
+    }
+
+}
+
+.btn {  
+    background: $lightBlue;
+    border-radius: 3px;
+    color: $white;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.error {
+    margin-top: -20px;
+    color: $red;
+}
+
+@media (min-width: 620px){
+    .commentsForm {
+        width: 331px;
+        padding: 0;
+    }
+}

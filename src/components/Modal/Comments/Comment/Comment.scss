@@ -1,0 +1,27 @@
+@import "../../../../variables.scss";
+
+
+.comment {
+    font-family: Roboto;
+    font-size: 13px;
+    line-height: 15px;
+
+    &__date {
+        display: inline-block;
+        margin-bottom: 5px;
+        margin-right: 5px;
+        color: $darkGrey;
+    }
+
+    &__text {
+        margin-bottom: 15px;
+        color: $black;
+    }
+
+    &__userName {
+        display: inline-block;
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: $black;
+    }
+}

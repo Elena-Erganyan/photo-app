@@ -1,24 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import Footer from './components/Footer/Footer';
+import GalleryContainer from './components/Gallery/GalleryContainer';
+import ModalContainer from './components/Modal/ModalContainer';
 
-function App() {
+
+
+const App = (props) => {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+        <h1>Photo App</h1>
+        <GalleryContainer isModalActive={props.isModalActive} />
+      </div>
+      <Footer />
+      {props.isModalActive && <ModalContainer />}
     </div>
   );
 }

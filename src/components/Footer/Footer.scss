@@ -1,0 +1,26 @@
+@import "../../variables.scss";
+
+
+
+.footer {
+    
+    position: relative;
+    padding: 11px 0;
+
+    &__text {
+        text-align: center;
+        font-size: 14px;
+        line-height: 16px;
+        color: $grey;
+    }
+
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        content: "";
+        height: 1px;
+        background-color: $grey;
+    }
+}

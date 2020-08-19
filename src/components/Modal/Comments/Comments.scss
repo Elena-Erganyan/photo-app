@@ -1,0 +1,12 @@
+.comments {
+    padding: 0 22px;
+    overflow: auto;
+    height: 20vh;
+}
+
+@media (min-width: 620px){
+    .comments {
+        width: 170px;
+        height: 205px;
+    }
+}
