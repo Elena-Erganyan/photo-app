@@ -7,6 +7,11 @@
     &__name,
     &__comment{
         padding: 3px;
+        border: 1px solid $grey;
+
+        &:hover {
+            border-color: $darkGrey;
+        }
     }
 
     &__name,
@@ -29,12 +34,17 @@
 }
 
 .btn {  
-    background: $lightBlue;
+    background-color: $lightBlue;
     border-radius: 3px;
     color: $white;
     border: none;
     padding: 8px;
     cursor: pointer;
+
+    &:hover {
+        background-color: $blue;
+        transition: all 0.7s;
+    }
 }
 
 .error {

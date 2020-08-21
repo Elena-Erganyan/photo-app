@@ -1,14 +1,25 @@
+@import "../../../variables.scss";
+
+
 .gallery__item {
+    border: 3px solid transparent;
     margin-bottom: 30px;
     cursor: pointer;
+
+    &:hover {
+        border-color: $lightBlue;
+        transition: all 0.5s;
+    }
 }
 
 .gallery__photo {
+    display: block;
     width: 280px;
     height: 171px;
 }
 
 @media (min-width: 530px){
+
     .gallery__photo {
         width: 229px;
         height: 142px;

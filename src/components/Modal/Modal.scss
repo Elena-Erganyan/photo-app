@@ -65,6 +65,11 @@
     &::after {
         transform: rotate(45deg);
     }
+
+    &:hover::before, 
+    &:hover::after {
+        background-color: $darkGrey;
+    }
 }
 
 @media (min-width: 321px){
