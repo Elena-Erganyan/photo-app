@@ -1,23 +1,14 @@
 {
   "files": {
-    "main.css": "/photo-app/static/css/main.a290be09.chunk.css",
-    "main.js": "/photo-app/static/js/main.1f636ecb.chunk.js",
-    "main.js.map": "/photo-app/static/js/main.1f636ecb.chunk.js.map",
-    "runtime-main.js": "/photo-app/static/js/runtime-main.efc72e9c.js",
-    "runtime-main.js.map": "/photo-app/static/js/runtime-main.efc72e9c.js.map",
-    "static/js/2.b9ff086f.chunk.js": "/photo-app/static/js/2.b9ff086f.chunk.js",
-    "static/js/2.b9ff086f.chunk.js.map": "/photo-app/static/js/2.b9ff086f.chunk.js.map",
+    "main.css": "/photo-app/static/css/main.dee55431.css",
+    "main.js": "/photo-app/static/js/main.42e5395c.js",
+    "static/media/preloader.svg": "/photo-app/static/media/preloader.8af4f8a93d36b1e242179fb5ca6a0e92.svg",
     "index.html": "/photo-app/index.html",
-    "precache-manifest.81632b6e9a737b87b7a39445a3230c0d.js": "/photo-app/precache-manifest.81632b6e9a737b87b7a39445a3230c0d.js",
-    "service-worker.js": "/photo-app/service-worker.js",
-    "static/css/main.a290be09.chunk.css.map": "/photo-app/static/css/main.a290be09.chunk.css.map",
-    "static/js/2.b9ff086f.chunk.js.LICENSE.txt": "/photo-app/static/js/2.b9ff086f.chunk.js.LICENSE.txt",
-    "static/media/preloader.svg": "/photo-app/static/media/preloader.55df549a.svg"
+    "main.dee55431.css.map": "/photo-app/static/css/main.dee55431.css.map",
+    "main.42e5395c.js.map": "/photo-app/static/js/main.42e5395c.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.efc72e9c.js",
-    "static/js/2.b9ff086f.chunk.js",
-    "static/css/main.a290be09.chunk.css",
-    "static/js/main.1f636ecb.chunk.js"
+    "static/css/main.dee55431.css",
+    "static/js/main.42e5395c.js"
   ]
 }
