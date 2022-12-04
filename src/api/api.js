@@ -3,7 +3,7 @@ import axios from "axios";
 
 
 const instance = axios.create({
-    baseURL: "http://localhost:3000/images"
+    baseURL: "https://my-json-server.typicode.com/elena-erganyan/images/images"
 });
 
 export const photosAPI = {
