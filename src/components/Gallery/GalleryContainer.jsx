@@ -10,6 +10,7 @@ const GalleryContainer = (props) => {
 
     useEffect(() => {
         props.requestPhotos();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     return <>

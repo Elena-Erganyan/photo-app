@@ -99,12 +99,12 @@ export const requestPhotoData = (photoId) => {
     };
 };
 
-export const postComment = (photoId, userName, text, commentId, date) => {
+export const postComment = (photoId, comments, userName, text, commentId, date) => {
     return async (dispatch) => {
 
-        const response = await photosAPI.setComment(photoId, userName, text, commentId, date);
+        const response = await photosAPI.setComment(photoId, comments, userName, text, commentId, date);
 
-        if (response.status === 204) {
+        if (response.status === 200) {
             dispatch(setComment(commentId, text, date, userName));
         } else {
             alert(`Some error ocurred: ${response.status}: ${response.statusText}`);

@@ -7,7 +7,7 @@ import { toggleIsModalActive, postComment } from "../../redux/photos-reducer";
 
 const ModalContainer = (props) => {
 
-    return <Modal toggleIsModalActive={props.toggleIsModalActive} photoData={props.photoData} postComment={props.postComment} /*setComment={props.setComment}*/ />
+    return <Modal toggleIsModalActive={props.toggleIsModalActive} photoData={props.photoData} postComment={props.postComment} />
 };
 
 const mapStateToProps = (state) => {
@@ -21,8 +21,8 @@ const mapDispatchToProps = (dispatch) => {
         toggleIsModalActive: (isModalActive) => {
             dispatch(toggleIsModalActive(isModalActive))
         },
-        postComment: (photoId, commentId, text, date, userName) => {
-            dispatch(postComment(photoId, commentId, text, date, userName));
+        postComment: (photoId, comments, commentId, text, date, userName) => {
+            dispatch(postComment(photoId, comments, commentId, text, date, userName));
         }
     };
 }

@@ -3,7 +3,7 @@ import axios from "axios";
 
 
 const instance = axios.create({
-    baseURL: "https://boiling-refuge-66454.herokuapp.com/images/"
+    baseURL: "http://localhost:3000/images"
 });
 
 export const photosAPI = {
@@ -13,7 +13,7 @@ export const photosAPI = {
     getPhotoData(photoId) {
         return instance.get(`${photoId}`);
     },
-    setComment(photoId, name, comment) {
-        return instance.post(`${photoId}/comments`, { name, comment });
+    setComment(photoId, comments, userName, text, id, date) {
+        return instance.patch(`${photoId}`, { comments: [...comments, {userName, text, id, date}]});
     }
 };
